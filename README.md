@@ -6,7 +6,7 @@ Provides programmatic access to the SEC's Edgar API via the command-line, or wit
 It is recommended to use Rye, e.g.,
 
 1. Clone: `git clone https://github.com/ryan-d-young/edgar.git`
-2. Set up venv: `cd edgar && rye sync`
+2. Set up venv: `cd edgar/src/edgar && rye sync`
 3. (Optional) Refresh mappings: `cd .. && python -m edgar.map_tickers`
 
 # Usage
