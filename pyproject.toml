@@ -1,0 +1,30 @@
+[project]
+name = "edgar"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "ryan-d-young", email = "155263570+ryan-d-young@users.noreply.github.com" }
+]
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "edgar:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/edgar"]
