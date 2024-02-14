@@ -29,7 +29,7 @@ def _parse_concept(response: Response) -> list[dict]:
     response = response.json()
     res = []
 
-    for unit in response['unitz'].keys():
+    for unit in response['units'].keys():
         for record in response['units'][unit]:
             concept = {
                 'unit': unit,
