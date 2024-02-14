@@ -36,7 +36,7 @@ def _fetch_raw_txt_mapping() -> requests.Response:
 
 
 def _load_raw_json_mapping(root: str) -> str:
-    fp = Path(root) / 'mappings' / 'company_tickers.json'
+    fp = Path(root) / MODNAME / 'mappings' / 'company_tickers.json'
     with open(fp) as file:
         file = file.read()
     return file
@@ -63,7 +63,7 @@ def _load_json_mapping(root: str, index_on_cik: bool = True):
 
 
 def _load_txt_mapping(root: str, index_on_cik: bool = True):
-    fp = Path(root) / 'mappings'
+    fp = Path(root) / MODNAME / 'mappings'
     fp = fp / 'cik_to_ticker_txt.txt' if index_on_cik else fp / 'ticker_to_cik_txt.txt'
     if fp.exists():
         with open(fp) as file:
