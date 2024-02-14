@@ -27,3 +27,6 @@ You may also specify `--output <DEST>` for a json dump of the return. The workfl
 *Assumes edgar is installed globally. If not, set your working directory to one level above the module and prefix any of the above commands with `python -m` as in the example below. 
 
 *For more information on the API itself: https://www.sec.gov/edgar/sec-api-documentation*
+
+# Demo
+![demo](demo.gif)
