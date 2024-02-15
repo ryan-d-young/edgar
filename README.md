@@ -6,9 +6,9 @@ Provides programmatic access to the SEC's Edgar API via the command-line, or wit
 It is recommended to use Rye, e.g.,
 
 1. Clone: `git clone https://github.com/ryan-d-young/edgar.git`
-2. Set up venv: `cd edgar/src/edgar && rye sync`
+2. Set up venv: `cd edgar && rye sync`
 3. Set user agent* environment variable: `export $EDGAR_USER_AGENT="<COMPANY NAME> <E-MAIL>"`
-4. (Optional) Refresh mappings: `cd .. && python -m edgar.map_tickers`
+4. (Optional) Refresh mappings: `cd src/edgar && python -m edgar.map_tickers`
 
 *Per the SEC's guidelines, declaring your user agent in this format is essential in order to use the API. 
 
